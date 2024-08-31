@@ -24,7 +24,7 @@ jobs:
                  files/sfw_skeletons.zip
           modrinth-id: xXNP32XJ
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
-          curseforge-id: 407488
+          curseforge-id: 1094620
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
           version-type: release
           version: 1.0.0
