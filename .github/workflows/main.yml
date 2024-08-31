@@ -23,9 +23,12 @@ jobs:
           files: |
                  sfw_skeletons.zip
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          modrinth-id: xXNP32XJ
+          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+          curseforge-id: 1094620
+          curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
+          version-type: release
           version: 1.0.0
-          loaders: neoforge
           game-versions: |
-               (1.20.1, 1.21)
-          java: 21
+               [1.20.1, 1.21.1]
           name: ""
