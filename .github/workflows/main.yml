@@ -16,7 +16,6 @@ jobs:
         with:
            type: 'zip'
            filename: 'sfw_skeletons.zip'
-           directory: '*assets* pack.mcmeta'
            exclusions: '*.git* /*files/* .editorconfig'
       - name: mc-publish
         uses: Kir-Antipov/mc-publish@v3.3.0
