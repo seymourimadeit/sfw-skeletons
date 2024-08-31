@@ -23,7 +23,7 @@ jobs:
           files: |
                  sfw_skeletons.zip
           modrinth-id: vtRdKfy9
-          loaders: vanilla
+          loaders: minecraft
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           version: 1.0.0
           game-versions: |
