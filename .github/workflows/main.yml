@@ -6,13 +6,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
-      uses: actions/checkout@master
+        uses: actions/checkout@master
         with:
           fetch-depth: 1000
           fetch-tags: true
       - name: Zip it up
-      uses: thedoctor0/zip-release@0.7.5
-       with:
+        uses: thedoctor0/zip-release@0.7.5
+        with:
            type: 'zip'
            filename: 'sfw_skeletons.zip'
            directory: 'files'
@@ -21,12 +21,11 @@ jobs:
         uses: Kir-Antipov/mc-publish@v3.3.0
         with:
           files: |
-                 files
+                 files/sfw_skeletons.zip
           modrinth-id: xXNP32XJ
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           curseforge-id: 407488
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
-          files: build/libs/!(*-@(javadoc|sources)).jar
           version-type: release
           loaders: neoforge
           game-versions: |
