@@ -4,6 +4,7 @@ on: [ workflow_dispatch ]
 jobs:
   build:
     permissions:
+    runs-on: ubuntu-latest
       contents: write
     steps:
       - uses: Kir-Antipov/mc-publish@v3.3
@@ -12,3 +13,8 @@ jobs:
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           curseforge-id: 1094620
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
+          version-type: release
+          game-versions: |
+            [1.20.1, 1.21.1]
+          changelog-file: changelog.*
+          version: 1.0.0
