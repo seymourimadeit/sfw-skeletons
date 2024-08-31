@@ -28,6 +28,11 @@ jobs:
           curseforge-id: 1094620
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
           version-type: release
+          loaders: |
+            neoforge
+            fabric
+            quilt
+            forge
           version: 1.0.0
           game-versions: |
                [1.20.1, 1.21.1]
