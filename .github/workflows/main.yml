@@ -5,10 +5,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Archive Release
-      - uses: actions/checkout@master
+      - name: Checkout repo
+      uses: actions/checkout@master
+        with:
+          fetch-depth: 1000
+          fetch-tags: true
+      - name: Zip it up
       uses: thedoctor0/zip-release@0.7.5
-      with:
+       with:
            type: 'zip'
            filename: 'sfw_skeletons.zip'
            directory: 'files'
