@@ -28,4 +28,4 @@ jobs:
           game-versions: |
                [1.20.1, 1.21.1]
           name: ""
-          loaders: minecraft
+          loaders: vanilla
