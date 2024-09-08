@@ -1,1 +1,1 @@
-- First Release
+- Update skeleton textures to remove hair shadows from original skins
