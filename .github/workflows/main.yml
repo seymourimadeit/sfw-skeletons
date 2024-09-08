@@ -27,6 +27,8 @@ jobs:
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
           version-type: release
           loaders: minecraft
+          version: 1.0.1
+          changelog-file: changelog.*
           game-versions: |
                [1.20.1, 1.21.1]
           name: ""
